@@ -29,9 +29,11 @@
 
 /* banner style */
 .banner{
+    width: 1140px;
+    height: 461px;
     display: flex;
     justify-content: space-around;
-    margin: 120px 150px;
+    margin: 50px 150px;
 }
 .banner-title{
     font-size: 65px;
@@ -41,6 +43,76 @@
 .banner-img{
     width: 530px;
     height: 355px;
+}
+/* plant section style */
+.plants-section{
+    width: 1140px;
+    height: 1186px;
+    margin: 80px 150px 210px 150px;
+}
+.plants-title{
+    font-size: 50px;
+    text-align: center;
+}
+.plants-description{
+    font-size: 19px;
+    text-align: center;
+}
+.grid-section{
+    width: 270px;
+    height: 480px;
+}
+.lily{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.lily-price{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+}
+.lily-img{
+    width: 100%;
+    height: 323px;
+    margin-bottom: -20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+/* BUTTON STYLE */
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+}
+.btn{
+    width: 270px;
+}
+/* flower & plant lover */
+.flower-lover{
+    display: flex;
+    gap: 60px;
+}
+.flower-lover-img{
+    width: 540px;
+    height: 590px;
+}
+.lover-txt{
+    font-size: 50px;
+    font-weight: bold;
+}
+.lover-description{
+    font-size: 18px;
 }
 /* responsive works */
 @media screen and (max-width: 576px) {
@@ -70,8 +142,9 @@
         height: 24px;
     }
     .banner-img{
-    width: 393.18px;
+    width: 394px;
     height: 245px;
+    margin-right: -20px
 }
 .banner-txt{
     width: 361px;
@@ -89,5 +162,59 @@
     margin-left: 16px;
     margin-right: 17px;
     margin-top: 0;
+}
+
+/* plant section */
+.plants-section{
+    width: 100%;
+    margin: auto;
+}
+.plants-title{
+    width: 393px;
+    height: 33px;
+    font-size: 24px;
+    text-align: center;
+}
+.plants-description{
+    width: 336px;
+    height: 68px;
+    margin: 16px 11px 28px 35px;
+    font-size: 14px;
+    text-align: center;
+}
+.grid{
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.grid-section{
+    width: 150px;
+    margin-top: 0px;
+}
+.lily-img{
+    width: 171px;
+    height: 196px;
+}
+.lily{
+    width: 96px;
+    height: 12px;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 20px 20px 30px;
+}
+.lily-price{
+    width: 59px;
+    height: 12px;
+    font-size: 16px;
+    margin: 20px 20px 20px 40px;
+}
+.btn-primary{
+    font-size: 0.75rem;
+}
+.btn{
+    width: 171px;
+    height: 50px;
+    font-size: 16px;
 }
 }
