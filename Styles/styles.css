@@ -20,14 +20,38 @@
 .light-gray{
     color: #8987A1;
 } 
+.f-color{
+    color: #E95A08;
+}
 .cart{
     margin: auto 10px;
 }
 
+/* banner style */
+.banner{
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 150px;
+}
+.banner-title{
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.banner-img{
+    width: 530px;
+    height: 355px;
+}
 /* responsive works */
 @media screen and (max-width: 576px) {
     .navbar{
         flex-direction: row;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner{
+        margin: 0 0 0 0;
     }
     .header{
         width: 361px;
@@ -45,5 +69,25 @@
         width: 113px;
         height: 24px;
     }
-
+    .banner-img{
+    width: 393.18px;
+    height: 245px;
+}
+.banner-txt{
+    width: 361px;
+    height: 147px;
+    margin: 0 0 0 0;
+}
+.banner-title{
+    width: 361px;
+    height: 66px;
+    font-size: 24px;
+    margin-left: 16px;
+}
+.banner-description{
+    font-size: 14px;
+    margin-left: 16px;
+    margin-right: 17px;
+    margin-top: 0;
+}
 }
