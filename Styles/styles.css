@@ -88,7 +88,7 @@
 }
 /* BUTTON STYLE */
 .btn-primary{
-    background-color: #FF900E;
+    background-color: #E95A08;
     color: white;
     padding: 20px 25px;
     font-size: 1.25rem;
@@ -236,6 +236,63 @@
   font-weight: bold;
     font-size: 16px;
      transition: background 0.3s;
+}
+/* bruch section */
+.colorful-brunch{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: 100px;
+}
+.brunch-head{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding: 100px 100px 0px 100px ;
+}
+.colorful-brunch input[type="email"]{
+    width: 644px;
+    height: 43px;
+    padding: 10px 20px;
+    background-color: white;
+    margin-bottom: 24px;
+    border: none;
+}
+/* footer section */
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.footer-logo{
+    width: 359px;
+    height: 179px;
+}
+.footer-img{
+    width: 135px;
+    height: 82px;
+}
+.footer-description{
+    width: 359px;
+    height: 81px;
+    font-size: 22px;
+}
+.page-section{
+    display: flex;
+}
+.page-list{
+    list-style: none;
+    gap: 50px;
+}
+.li-name{
+    margin-top: 30px;
+}
+.icon{
+    margin-left: 50px;
+}
+.icon-img{
+    margin-top: 30px;
+    margin-right: 20px;
 }
 /* responsive works */
 @media screen and (max-width: 576px) {
@@ -417,5 +474,20 @@
     height: 200px;
     width: 370px;
     margin-top: 20px;
+}
+/* brunch section */
+.colorful-brunch{
+    width: 393px;
+    height: 275px;
+    text-align: center;
+    margin-left: 0;
+}
+.brunch-head{
+    font-size: 20px;
+    padding: 100px 50px 0px 50px;
+}
+.colorful-brunch input[type="email"]{
+    width: 165px;
+    height: 30px;
 }
 }
