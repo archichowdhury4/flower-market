@@ -490,4 +490,15 @@
     width: 165px;
     height: 30px;
 }
+.footer{
+    display: block;
+    margin-left: 0;
+}
+.page-section{
+    display: block;
+    margin-left: -30px;
+}
+.icon{
+    margin-left: 0;
+}
 }
