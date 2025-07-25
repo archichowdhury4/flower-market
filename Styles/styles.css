@@ -113,7 +113,7 @@
 }
 .flower-lover-img{
     width: 540px;
-    height: 500px;
+    height: 450px;
     display: block;
 }
 .badge{
@@ -121,16 +121,15 @@
     top: -120px;
     left: 75%;
     transform: translateX(-50%);
-    width: 250px;
-    height: 250px;
-
+    width: 210px;
+    height: 210px;
 }
 .lover-txt{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
 }
 .lover-description{
-    font-size: 18px;
+    font-size: 17px;
 }
 /* latest section */
 .latest-section{
@@ -153,40 +152,90 @@
     height: 54px;
     margin-left: 250px;
 }
-.latest-image{
-    display: flex;
-    width: 1140px;
-    height: 424px;
-    margin-left: 150px;
-    gap: 50px;
+
+.container {
+  display: flex;
+  gap: 15px;
+  margin-left: 150px;
 }
-.vertical-collage{
-    display: block;
-    width: 336px;
-    height: 423px;
+
+.left-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.card.small {
+  width: 367px;
+  height: 201px;
+}
+
+.card.large {
+  flex: 1;
+  height: 423px;
+  width: 753px;
+}
+
+.card .text {
+  position: absolute;
+  text-align: center;
+  margin: 92px 48px 64px 49px;
+  
+}
+.text-small{
+    width: 270px;
+    height: 77px;
+    margin-left: 70px;
     
 }
-.row{
-    width: 753px;
-    height: 424px;
+.text-large{
+    width: 498px;
+    height: 50px;
+
 }
-.img-border{
-    border: solid none;
-    border-radius: 25px;
+.card .offer {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
-.space{
-    margin-bottom: 20px;
+.card .offers {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
 }
-.txt-over-img{
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
+.offer{
+    margin-top: 0px;
+}
+.offers{
+    margin-top: 80px;
+}
+.shop{
+  display: block;
+  margin-top: 8px;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  transition: background 0.3s;
+  margin-top: 0;
+}
+.shops{
+    display: block;
+  margin-top: 8px;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+    font-size: 16px;
+     transition: background 0.3s;
 }
 /* responsive works */
 @media screen and (max-width: 576px) {
@@ -219,7 +268,7 @@
     .banner-img{
     width: 394px;
     height: 245px;
-    margin-right: -20px
+    margin-right: -20px;
 }
 .banner-txt{
     width: 361px;
@@ -248,7 +297,7 @@
     width: 393px;
     height: 33px;
     font-size: 24px;
-    text-align: center; ip
+    text-align: center;
 }
 .plants-description{
     width: 336px;
@@ -295,6 +344,7 @@
 .flower-lover{
     flex-direction: column;
     width: 100%;
+    height: 100%;
     margin-top: 0px;
     margin-left: 0;
 
@@ -319,10 +369,53 @@
     margin-bottom: 40px;
 }
 .lover-description{
-    font-size: 14px;
+    font-size: 10px;
 }
 .plant-lover-list{
     width: 361px;
     height: 51px;
+}
+/* latest style */
+.latest-txt{
+    width: 396px;
+    height: 50px;
+    margin-left: 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+    
+}
+.latest-description{
+    width: 336px;
+    height: 68px;
+    font-size: 14px;
+    margin-left: 0;
+
+}
+.container{
+    display: block;
+    gap: 10px;
+    margin-left: 0;
+}
+.card .offer{
+    font-size: 20px;
+}
+.card .offers{
+    font-size: 20px;
+}
+.offers, .shop{
+    margin-left: -170px;
+    margin-top: 1px;
+}
+.shop{
+    font-size: 16px;
+}
+.shops{
+    font-size: 16px;
+}
+
+.card.large{
+    height: 200px;
+    width: 370px;
+    margin-top: 20px;
 }
 }
