@@ -33,7 +33,7 @@
     height: 461px;
     display: flex;
     justify-content: space-around;
-    margin: 50px 150px;
+    margin: 100px 150px;
 }
 .banner-title{
     font-size: 65px;
@@ -101,11 +101,29 @@
 /* flower & plant lover */
 .flower-lover{
     display: flex;
-    gap: 60px;
+    width: 1140px;
+    height: 597px;
+    margin: 50px 90px;
+}
+.badge-section{
+    position: relative;
+    flex: 1 1 300px;
+    min-width: 300px;
+    margin-left: 60px;
 }
 .flower-lover-img{
     width: 540px;
-    height: 590px;
+    height: 500px;
+    display: block;
+}
+.badge{
+    position: absolute;
+    top: -120px;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+
 }
 .lover-txt{
     font-size: 50px;
@@ -114,15 +132,72 @@
 .lover-description{
     font-size: 18px;
 }
+/* latest section */
+.latest-section{
+    width: 1140px;
+}
+.latest-txt{
+    width: 1140px;
+    height: 68px;
+    margin-left: 120px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.latest-description{
+    font-size: 18px;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 888px;
+    height: 54px;
+    margin-left: 250px;
+}
+.latest-image{
+    display: flex;
+    width: 1140px;
+    height: 424px;
+    margin-left: 150px;
+    gap: 50px;
+}
+.vertical-collage{
+    display: block;
+    width: 336px;
+    height: 423px;
+    
+}
+.row{
+    width: 753px;
+    height: 424px;
+}
+.img-border{
+    border: solid none;
+    border-radius: 25px;
+}
+.space{
+    margin-bottom: 20px;
+}
+.txt-over-img{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
 /* responsive works */
 @media screen and (max-width: 576px) {
     .navbar{
         flex-direction: row;
     }
-    .banner{
+    .banner {
         flex-direction: column-reverse;
     }
     .banner{
+        width: 100%;
         margin: 0 0 0 0;
     }
     .header{
@@ -173,12 +248,11 @@
     width: 393px;
     height: 33px;
     font-size: 24px;
-    text-align: center;
+    text-align: center; ip
 }
 .plants-description{
     width: 336px;
     height: 68px;
-    margin: 16px 11px 28px 35px;
     font-size: 14px;
     text-align: center;
 }
@@ -189,8 +263,9 @@
     margin-left: 5px;
 }
 .grid-section{
-    width: 150px;
-    margin-top: 0px;
+    width: 200px;
+    height: 310px;
+    margin-top: 10px;
 }
 .lily-img{
     width: 171px;
@@ -216,5 +291,38 @@
     width: 171px;
     height: 50px;
     font-size: 16px;
+}
+.flower-lover{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0;
+
+}
+
+.flower-lover-img{
+    width: 358px;
+    height: 396px;
+    margin-top: 0px;
+    margin-left: 0;
+
+}
+.badge-section{
+    margin-left: 0;
+    margin-top: 50px;
+}
+.lover-txt{
+    width: 270px;
+    height: 33px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.lover-description{
+    font-size: 14px;
+}
+.plant-lover-list{
+    width: 361px;
+    height: 51px;
 }
 }
